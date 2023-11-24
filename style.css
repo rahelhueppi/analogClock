@@ -40,29 +40,21 @@
 .hand {
     width: 50%;
     height: 6px;
-    background: #61afff;
     position: absolute;
     top: 50%;
-    border-radius: 6px;
     transform-origin: 100%;
     transform: rotate(90deg);
-    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
 
 
-.hand hour-hand {
-    width: 30%;
-    z-index: 3;
+.hour-hand {
+    background:red;
 }
    
-.hand min-hand {
-    height: 3px;
-    z-index: 10;
-    width: 40%;
+.min-hand {
+    background:blue;
 }
 
-.hand second-hand {
-    background: #451035;
-    width: 45%;
-    height: 2px;
+.second-hand {
+    background:green;
 }
