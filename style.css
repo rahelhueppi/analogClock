@@ -1,24 +1,26 @@
+/*the whole clock*/
 .clock {
     position: relative;
     width: 300px;
     height: 300px;
-    border: 20px solid rgb(90, 81, 81);
-    border-radius: 50%;
-    margin: 0 auto;
+    border: 20px solid rgb(90, 81, 81); /*thickness an color of the border*/
+    border-radius: 50%; /*circle / makes element fully round*/
+    margin: 0 auto; /*the clock is in the middle, not left or right*/
 }
 
-
+/*outer-clock-face: the edge around the inner-clock-face*/
 .outer-clock-face {
-    position: absolute;
+    position: absolute; /*it will be positioned to the nearest ancestor*/
     width: 100%;
     height: 100%;
     background:rgb(226, 214, 214);
     border-radius: 50%;
 }
 
+/*inner-clock-face*/
 .inner-clock-face {
     position: absolute;
-    top: 10%;
+    top: 10%; /*will be positioned 10% from the top of its nearest positioned ancestor*/
     left: 10%;
     width: 80%;
     height: 80%;
@@ -26,35 +28,36 @@
     border-radius: 50%;
 }
 
-
+/* one long marking behind inner-clock-face: now there are markings on 3 and 9*/
 .marking {
     position: absolute;
-    width: 5px;
-    height: 100%;
+    width: 5px; /*the of the marking*/
+    height: 100%; /*length of marking*/
     background: #463c75;
-    z-index: 0;
-    left: 49%;
-   }
-
-
-.hand {
-    width: 50%;
-    height: 6px;
-    position: absolute;
-    top: 50%;
-    transform-origin: 100%;
-    transform: rotate(90deg);
+    left: 49%; /*position of the marking: the middle of the clock*/
+    transform: rotate(-90deg); /*turns the whole this 90°*/
 }
 
 
+/*time hands in general*/
+.hand {
+    width: 50%; /*length of the hands*/
+    height: 6px; /*thickness*/
+    position: absolute;
+    top: 50%; /*hands are set in the middle*/
+    transform-origin: 100%; /*without it, it wouldn't be in the middle*/
+}
+
+/* every hand seperate */
 .hour-hand {
-    background:red;
+    background:rgb(49, 9, 41);
+    height: 10px; /*the thickness of the hour-hand*/
 }
    
 .min-hand {
-    background:blue;
+    background:rgb(49, 9, 41);
 }
 
 .second-hand {
-    background:green;
+    background:rgb(126, 39, 109);
 }
