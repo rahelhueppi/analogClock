@@ -49,20 +49,20 @@
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
 
-/*
+
 .hand hour-hand {
     width: 30%;
     z-index: 3;
 }
    
 .hand min-hand {
-height: 3px;
-z-index: 10;
-width: 40%;
+    height: 3px;
+    z-index: 10;
+    width: 40%;
 }
 
 .hand second-hand {
-background: #451035;
-width: 45%;
-height: 2px;
-}*/
+    background: #451035;
+    width: 45%;
+    height: 2px;
+}
